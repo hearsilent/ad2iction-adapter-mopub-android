@@ -10,7 +10,7 @@ Otherwise, please upgrade to the newer versions of both SDKs.
 ###  Mediate Ad2iction Ads through MoPub
 
 To integrate Ad2iction as the Custom Native Network in the MoPub ad serving flow, you need the
-Custom Event Class code incorporated into your application in addition to the Flurry SDK.
+Custom Event Class code incorporated into your application in addition to the Ad2iction SDK.
 Three quick steps are necessary:
 
 1. Integrate the Ad2iction SDK and Ad2iction adapter for MoPub code into your app
@@ -30,7 +30,7 @@ support. See http://developer.android.com/google/playservices/setup.html.
     * [`Ad2ictionCustomEventNative`](src/com/mopub/nativeads/Ad2ictionCustomEventNative.java)
     * [`Ad2ictionNativeAdRenderer`](src/com/mopub/nativeads/Ad2ictionNativeAdRenderer.java)
 
-5. The steps to integrate Flurry Native Ads via MoPub are similar to those described [here](https://github.com/mopub/mopub-android-sdk/wiki/Native-Ads-Integration):
+5. The steps to integrate Ad2iction Native Ads via MoPub are similar to those described [here](https://github.com/mopub/mopub-android-sdk/wiki/Native-Ads-Integration):
     * Create an XML layout for your native ads
     * Define where ads should be placed within your feed
     * Create a MoPubAdAdapter to wrap your existing `Adapter` subclass and begin loading ads.
