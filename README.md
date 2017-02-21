@@ -51,7 +51,7 @@ support. See http://developer.android.com/google/playservices/setup.html.
  ```
 
 6. Add permissions in AndroidManifest:
-```xml
+ ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -60,7 +60,7 @@ support. See http://developer.android.com/google/playservices/setup.html.
 ```
 
 7. Add Activity declaration in AndroidManifest:
-```xml
+ ```xml
 <activity
     android:name="com.ad2iction.mobileads.Ad2ictionActivity"
     android:configChanges="keyboardHidden|orientation|screenSize"/>
@@ -79,7 +79,7 @@ support. See http://developer.android.com/google/playservices/setup.html.
 8. If you plan to run [ProGuard](http://developer.android.com/tools/help/proguard.html) on your app
 before release, you will need to add the following to your ProGuard configuration file.
 
-```
+ ```
 # Ad2iction Proguard Config
 # NOTE: You should also include the Android Proguard config found with the build tools:
 # $ANDROID_HOME/tools/proguard/proguard‐android.txt
