@@ -62,18 +62,18 @@ support. See http://developer.android.com/google/playservices/setup.html.
 7. Add Activity declaration in AndroidManifest:
  ```xml
 <activity
-    android:name="com.ad2iction.mobileads.Ad2ictionActivity"
-    android:configChanges="keyboardHidden|orientation|screenSize"/>
+    android:name="com.ad2iction.mobileads.Ad2ictionActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize"/>
 <activity
-    android:name="com.ad2iction.mobileads.MraidActivity"
+    android:name="com.ad2iction.mobileads.MraidActivity"
     android:configChanges="keyboardHidden|orientation|screenSize"
-    android:theme="@android:style/Theme.Translucent"/>
+    android:theme="@android:style/Theme.Translucent"/>
 <activity
-    android:name="com.ad2iction.common.Ad2ictionBrowser"
-    android:configChanges="keyboardHidden|orientation|screenSize"/>
+    android:name="com.ad2iction.common.Ad2ictionBrowser"
+    android:configChanges="keyboardHidden|orientation|screenSize"/>
 <activity
-    android:name="com.ad2iction.mobileads.MraidVideoPlayerActivity"
-    android:configChanges="keyboardHidden|orientation|screenSize"/>
+    android:name="com.ad2iction.mobileads.MraidVideoPlayerActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize"/>
 ```
 
 8. If you plan to run [ProGuard](http://developer.android.com/tools/help/proguard.html) on your app
@@ -85,22 +85,22 @@ before release, you will need to add the following to your ProGuard configuratio
 # $ANDROID_HOME/tools/proguard/proguard‐android.txt
 
 # Add this line if you use Admob Adapter
-‐libraryjars \libs\ad2iction‐mediation‐adapteradmob.jar
+-libraryjars \libs\ad2iction‐mediation‐adapteradmob.jar
 
-‐libraryjars \libs\ad2iction‐sdk.jar
+-libraryjars \libs\ad2iction‐sdk.jar
 
 # Keep public classes and methods.
-‐keepclassmembers class com.ad2iction.** { public *;}
-‐keep public class com.ad2iction.**
-‐keep public class android.webkit.JavascriptInterface {}
+-keepclassmembers class com.ad2iction.** { public *;}
+-keep public class com.ad2iction.**
+-keep public class android.webkit.JavascriptInterface {}
 
-‐keep class * extends com.ad2iction.mobileads.CustomEventBanner {}
-‐keep class * extends com.ad2iction.mobileads.CustomEventInterstitial {}
-‐keep class * extends com.ad2iction.nativeads.CustomEventNative {}
+-keep class * extends com.ad2iction.mobileads.CustomEventBanner {}
+-keep class * extends com.ad2iction.mobileads.CustomEventInterstitial {}
+-keep class * extends com.ad2iction.nativeads.CustomEventNative {}
 
-‐keep class com.google.android.gms.common.GooglePlayServicesUtil {*;}
-‐keep class com.google.android.gms.ads.identifier.AdvertisingIdClient {*;}
-‐keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info {*;}
+-keep class com.google.android.gms.common.GooglePlayServicesUtil {*;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient {*;}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info {*;}
  ```
 
 #### Configure Ad2iction Ad unit(s)
