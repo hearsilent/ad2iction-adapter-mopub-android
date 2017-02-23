@@ -82,12 +82,12 @@ before release, you will need to add the following to your ProGuard configuratio
  ```
 # Ad2iction Proguard Config
 # NOTE: You should also include the Android Proguard config found with the build tools:
-# $ANDROID_HOME/tools/proguard/proguard‐android.txt
+# $ANDROID_HOME/tools/proguard/proguard-android.txt
 
 # Add this line if you use Admob Adapter
--libraryjars \libs\ad2iction‐mediation‐adapteradmob.jar
+-libraryjars \libs\ad2iction-mediation-adapteradmob.jar
 
--libraryjars \libs\ad2iction‐sdk.jar
+-libraryjars \libs\ad2iction-sdk.jar
 
 # Keep public classes and methods.
 -keepclassmembers class com.ad2iction.** { public *;}
