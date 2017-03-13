@@ -66,7 +66,7 @@ support. See http://developer.android.com/google/playservices/setup.html.
     android:configChanges="keyboardHidden|orientation|screenSize"/>
 <activity
     android:name="com.ad2iction.mobileads.MraidActivity"
-    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     android:theme="@android:style/Theme.Translucent"/>
 <activity
     android:name="com.ad2iction.common.Ad2ictionBrowser"
